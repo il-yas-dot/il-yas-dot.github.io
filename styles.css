@@ -1,11 +1,12 @@
 body {
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-    background-color: #f9f9f9;
+    font-family: 'Arial', sans-serif;
+    background-color: #f0f0f0;
     color: #333;
+    margin: 0;
 }
 
 header {
-    background-color: #133;
+    background-color: #20B2AA;
     color: white;
     text-align: center;
     padding: 4rem 0;
@@ -15,12 +16,44 @@ nav ul {
     list-style: none;
     display: flex;
     justify-content: center;
-    background-color: #222;
+    background-color: #34495e;
     padding: 1rem 0;
 }
 
 nav li {
     margin: 0 1rem;
+}
+
+.menu {
+  position: absolute;
+  top: 0;
+  right: 0;
+  padding: 20px;
+  position: fixed;
+   display: flex;
+   align-items: center;
+   justify-content: center;
+   
+
+}
+.menu ul {
+  list-style: none;
+  padding: 0;
+
+
+}
+
+.menu li {
+  margin-bottom: 10px;
+  padding: 20px;
+  margin-top: 30px;
+  display:flex;
+  justify-content: ;
+}
+
+.menu a img {
+  width: 30px;
+  height: 30px;
 }
 
 nav a {
@@ -34,43 +67,71 @@ nav a:hover {
     color: #ff9900;
 }
 
-section {
-    padding: 6rem 0;
-    text-align: center;
+.container {
+    max-width: 800px;
+    margin: 0 auto;
 }
 
-#about {
-    background-color: #f5f5f5;
+section {
+    text-align: center;
+    padding: 4rem 0;
+}
+
+#bio {
+    background-color: #ecf0f1;
 }
 
 #portfolio {
-    background-color: #fff;
+    background-color: #ffffff;
 }
 
 .project {
-    background-color: #f9f9f9;
+    background-color: #fafafa;
     border-radius: 8px;
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
     padding: 2rem;
     margin-bottom: 2rem;
     text-align: left;
+    position: relative;
 }
 
-.project img {
+.media {
+    margin: 2rem 0;
+}
+
+.presentation {
+    margin-top: 2rem;
+    text-align: center;
+}
+
+.presentation iframe {
     max-width: 100%;
-    height: auto;
-    border-radius: 4px;
-    margin-bottom: 1rem;
+}
+
+.video-container {
+    position: relative;
+    padding-bottom: 56.25%; /* 16:9 aspect ratio */
+    overflow: hidden;
+}
+
+.video-container iframe {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}
+#elevator-pitch {
+    background-color: #ecf0f1;
 }
 
 #contact {
     background-color: #333;
     color: white;
 }
-
 footer {
     text-align: center;
     padding: 1rem 0;
-    background-color: #222;
+    background-color: #34495e;
     color: white;
 }
