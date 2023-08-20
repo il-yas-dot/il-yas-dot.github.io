@@ -2,99 +2,305 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="styles.css">
-    <link
-    rel="stylesheet"
-    href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
-  />
-    <title>My Portfolio</title>
+    <title>Portfolio</title>
+    <link rel="stylesheet" href="styles/styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" integrity="sha512-1ycn6IcaQQ40/MKBW2W4Rhis/DbILU74C1vSrLJxCq57o941Ym01SwNsOMqvEBFlcgUa6xLiPY/NS5R+E6ztJQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700;800&display=swap" rel="stylesheet">
 </head>
-<body>
-
-    <header>
-        <section id="home">
-    <h1 class="animate__animated animate__backInDown">Ilyas Chahid</h1>        
-    <p>Data Science Student &amp; AI Enthusiast</p>
-    </section>
-    </header>
-    <nav>
-        <ul>
-            <li><a href="#bio">About</a></li>
-            <li><a href="#portfolio">Portfolio</a></li>
-            <li><a href="#elevator-pitch">Elevator Pitch</a></li>
-        </ul>
-    </nav>
-      
-  
-    <section id="bio">
-
-        <div class="container">
-           <h2>About Me</h2>
-            <h3>Ilyas Chahid is a Passionate Student pursuing Studies in Data Science at ALX AFRICA. </h3>
-            <p>
-With a strong interest in leveraging data-driven insights, he aspires to become a
-proficient data scientist, making informed decisions and fostering innovation. Through
-completing hands-on projects and engaging with data science communities, Ilyas
-showcases his expertise in data analysis, machine learning modeling, and data
-visualization. Maintaining a growth mindset and valuing continuous learning, he is
-committed to making a significant impact in the dynamic world of data science.</p>
-        </div>
-    </section>
-    <section id="portfolio">
-    <div class="container">
-        <h2>Portfolio</h2>
-        <div class="project">
-            <h3>Data Analysis: Customer Segmentation</h3>
-            <p>Analyzed customer data to identify distinct segments for targeted marketing strategies.</p>
-            <div class="media">
-                <div class="video-container">
-                    <iframe width="1263" height="720" src="https://www.youtube.com/embed/UVQGe3TDqR0" title="ALX Project group 516/ Milestone 10" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
-
-                </div>
-                <div class ="presentation">
-                    <h4>Presentation: Project Slide Deck</h4>
-                
-                    <iframe src="https://docs.google.com/presentation/d/e/2PACX-1vT8HiFF7f0qTMAt3-hcDVXGoGVKsuVLetxLN8KHgw9lhjJxnt_O8eVwpmahni-AA_ULRHBlKSwC2daU/embed?start=false&loop=true&delayms=10000" frameborder="0" width="1263" height="450" allowfullscreen="true" mozallowfullscreen="true" webkitallowfullscreen="true"></iframe>
+<body class="main-content">
+    <header class="container header active" id="home">
+        <div class="header-content">
+            <div class="left-header">
+                <div class="h-shape"></div>
+                <div class="image">
+                   <img src="img/data.jpg" alt="">
                 </div>
             </div>
-            
-        </div>
-        <!-- Add more projects here if needed -->
-    </div>
-</section>
-    <section id="elevator-pitch">
-        <div class="container">
-            <h2>Elevator Pitch</h2>
-            <p>My name is Ilyas Chahid, and I have a strong background in data science and tech
-specialization. With a solid foundation in statistics and programming, I excel at data analysis
-and developing machine learning models.
-My top 3 skills include data wrangling, predictive modeling, and data visualization. I am
-well-versed in using Python, R, and SQL to extract valuable insights from complex datasets.
-As someone deeply passionate about data science and technology, I constantly strive to stay
-updated with the latest trends and advancements in the field. My curiosity and eagerness to
-learn make me stand out as a dedicated and innovative professional.
-By leveraging my skills in data science, I can bring invaluable contributions to employers or
-clients. I will help them make informed decisions through data-driven insights, optimize
-business processes, and identify opportunities for growth and improvement.
-My specific ask is for the opportunity to collaborate on challenging data science projects or be
-part of a team that drives impactful solutions through data. Let's connect and explore how my
-expertise can add value to your organization.
-In conclusion, I am an enthusiastic data science specialist with the knowledge and passion to
-make a difference in the tech industry. I'm ready to bring my skills to the table and drive
-transformative results for your organization. Let's empower data for success together!
-</p>
-        </div>
-    </section>
-     <section id="contact">
-        <h2>Contact Me</h2>
-        
-        <p>Feel free to reach out to me  <a href = "mailto: ilyass.chahid@outlook.com">Send Email</a>
-</p>
-    </section>
+            <div class="right-header">
+                <h1 class="name">
+                    Hi, I'm <span>ILYAS CHAHID.</span>
+                    A Data Science & AI Enthusiast.
+                </h1>
+                <p>
+                    I'm a Data Science Student, pursuing Studies in Data Science program at ALX AFRICA
+                </p>
+                <div class="btn-con">
+                    <a href="" class="main-btn" id="main-about-btn">
+                        <span class="btn-text"  >MORE ABOUT ME</span>
+                    <span class="btn-icon"><i class="fas fa-arrow-down"></i></span>
+                    </a>
+                </div>
 
-    <footer>
-        <p>&copy; 2023 Ilyas Chahid. All rights reserved.</p>
-    </footer>
+                
+                
+
+            </div>
+        </div>
+    </header>
+    <main>
+        <section class="container about" id="about">
+            <div class="main-title">
+                <h2>About <span>me</span><span class="bg-text">my stats</span></h2>
+            </div>
+            <div class="about-container">
+                <div class="left-about">
+                    <h4>Information About me</h4>
+                    <p>
+                        Ilyas Chahid is a Passionate Student pursuing Studies in Data Science at ALX AFRICA.
+                        With a strong interest in leveraging data-driven insights,
+                         he aspires to become a proficient data scientist,
+                          making informed decisions and fostering innovation. <br /> <br /> Through completing hands-on projects and engaging with data science communities,
+                           Ilyas showcases his expertise in data analysis,
+                            machine learning modeling, and data visualization.
+                             Maintaining a growth mindset and valuing continuous learning,
+                              he is committed to making a significant impact in the dynamic world of data science.
+                    </p>
+                    <div class="btn-con">
+                        <a href="#" class="main-btn">
+                            <span class="btn-text">My projects</span>
+                            <span class="btn-icon"><i class="fas fa-project-diagram"></i></span>
+                        </a>
+                    </div>
+                </div>
+                <div class="right-about">
+                    <div class="about-item">
+                        <div class="abt-text">
+                            <p class="large-text">14+</p>
+                            <p class="small-text">Milestones <br /> Completed</p>
+                        </div>
+                    </div>
+                    <div class="about-item">
+                        <div class="abt-text">
+                            <p class="large-text">3+</p>
+                            <p class="small-text">Months of <br /> learning</p>
+                        </div>
+                    </div>
+                    <div class="about-item">
+                        <div class="abt-text">
+                            <p class="large-text">90+</p>
+                            <p class="small-text">Modules <br /> Completed</p>
+                        </div>
+                    </div>
+                    <div class="about-item">
+                        <div class="abt-text">
+                            <p class="large-text">20+</p>
+                            <p class="small-text">Peer learning <br /> session</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+       
+        </section>
+        <section class="container" id="portfolio">
+            <div class="main-title">
+                <h2>My <span>Portfolio</span><span class="bg-text">My Work</span></h2>
+            </div>
+            <p class="port-text">
+                Here is some of my work that I've done by myself and with teams.
+            </p>
+            <div class="portfolios">
+                <div class="portfolio-item">
+                    <div class="image">
+                        <img src="img/youtube.png" alt="">
+                    </div>
+                    <div class="hover-items">
+                        <h3>EduConnect Platform Video</h3>
+                        <div class="icons">
+                            <a href="https://www.youtube.com/watch?v=UVQGe3TDqR0" class="icon" target="_blank" rel="noopener noreferrer">
+                                <i class="fab fa-youtube"></i>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                <div class="portfolio-item">
+                    <div class="image">
+                        <img src="img/slide.png" alt="">
+                    </div>
+                    <div class="hover-items">
+                        <h3>EduConnect Platform Slides</h3>
+                        <div class="icons">
+                           
+                            <a href="https://docs.google.com/presentation/d/1bOA_QLG5LsEun1VJZw3wR9ALex2BVOWipbvdF0k-McY/edit#slide=id.p1" class="icon" target="_blank" rel="noopener noreferrer">
+                                <i class="fab fa-slideshare"></i>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                <div class="portfolio-item">
+                    <div class="image">
+                        <img src="img/portfolio1.png" alt="">
+                    </div>
+                    <div class="hover-items">
+                        <h3>My Portfolio</h3>
+                        <h5>Using HTML and CSS </h5>
+                        <div class="icons">
+                           
+                            <a href="https://ilyaschahid.me/">
+                                <i class="fa fa-globe" aria-hidden="true"></i>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                
+                </div>
+                
+            </div>
+        </section>
+        <section class="container" id="blogs">
+            <div class="blogs-content">
+                <div class="main-title">
+                    <h2>My <span>Elevator Pitch</span><span class="bg-text">My Elevator Pitch</span></h2>
+                </div>
+                <div class="blogs">
+                    
+
+
+                    <div class="blog">
+                        <iframe width="1045" height="353" src="https://www.youtube.com/embed/UVQ3TDqR0" title="ALX Project group 516/ Milestone 10" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+                        <div class="blog-text">
+                            <h4>
+                                This is My Elevator Pitch
+                            </h4>
+                            <p>
+                                My name is Ilyas Chahid, and I have a strong background in data science and tech specialization.
+                                 With a solid foundation in statistics and programming, I excel at data analysis 
+                                 and developing machine learning models. My top 3 skills include data wrangling,
+                                  predictive modeling, and data visualization. I am well-versed in using Python, R,
+                                   and SQL to extract valuable insights from complex datasets. As someone deeply passionate
+                                    about data science and technology, I constantly strive to stay updated with the latest trends
+                                     and advancements in the field. My curiosity and eagerness to learn make me stand out as a dedicated
+                                      and innovative professional. By leveraging my skills in data science, I can bring invaluable contributions to employers
+                                       or clients. I will help them make informed decisions through data-driven insights,
+                                        optimize business processes, and identify opportunities for growth and improvement.
+                                         My specific ask is for the opportunity to collaborate on challenging data science projects 
+                                         or be part of a team that drives impactful solutions through data.
+                                          Let's connect and explore how my expertise can add value to your organization.
+                                           In conclusion, I am an enthusiastic data science specialist with the knowledge and passion to make a difference in the tech industry.
+                                            I'm ready to bring my skills to the table and drive transformative results for your organization.
+                                             Let's empower data for success together!
+                            </p>
+                        </div>
+                    </div>
+                   
+                    
+                    
+                </div>
+            </div>
+        </section>
+        <section class="container contact" id="contact">
+            <div class="contact-container">
+                <div class="main-title">
+                    <h2>Contact <span>Me</span><span class="bg-text">Contact</span></h2>
+                </div>
+                <div class="contact-content-con">
+                    <div class="left-contact">
+                        <h4>Feel free to Contact Me</h4>
+                        <p>
+                            Contact me using my email 
+                        </p>
+                        <div class="contact-info">
+                            <div class="contact-item">
+                                <div class="icon">
+                                    <i class="fas fa-map-marker-alt"></i>
+                                    <span>Location</span>
+                                </div>
+                                <p>
+                                    : Morocco
+                                </p>
+                            </div>
+                            <div class="contact-item">
+                                <div class="icon">
+                                    <i class="fas fa-envelope"></i>
+                                    <span>Email</span>
+                                </div>
+                                <p>
+                                    <span id="hidden-email"></span>
+                                </p>
+                            </div>
+                            <div class="contact-item">
+                                <div class="icon">
+                                    <i class="fas fa-user-graduate"></i>
+                                    <span>Education</span>
+                                </div>
+                                <p>
+                                    <span>: ALX Africa</span>
+                                </p>
+                            </div>
+                            
+                            <div class="contact-item">
+                                <div class="icon">
+                                    <i class="fas fa-globe-africa"></i>
+                                    <span>Languages</span>
+                                </div>
+                                <p>
+                                    <span>: Arabic, English</span>
+                                </p>
+                            </div>
+                        </div>
+                        <div class="contact-icons">
+                            <div class="contact-icon">
+                                <a href="www.facebook.com" target="_blank">
+                                    <i class="fab fa-facebook-f"></i>
+                                </a>
+                                <a href="#" target="_blank">
+                                    <i class="fab fa-twitter"></i>
+                                </a>
+                                <a href="#" target="_blank">
+                                    <i class="fab fa-github"></i>
+                                </a>
+                                <a href="#" target="_blank">
+                                    <i class="fab fa-youtube"></i>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                    
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <div class="controls">
+        <div class="control active-btn" data-id="home" >
+            <i class="fas fa-home"></i>
+        </div>
+        <div class="control" data-id="about">
+            <i class="fas fa-user"></i>
+        </div>
+        <div class="control" data-id="portfolio">
+            <i class="fas fa-briefcase"></i>
+        </div>
+        <div class="control" data-id="blogs">
+            <i class="far fa-newspaper"></i>
+        </div>
+        <div class="control" data-id="contact">
+            <i class="fas fa-envelope-open"></i>
+        </div>
+    </div>
+    <div class="theme-btn">
+        <i class="fas fa-adjust"></i>
+    </div>
+    <script src="app.js"></script>
+    <script>
+        // Define the parts of the email
+        var username = "ilyass.chahid";
+        var domain = "outlook.com";
     
+        // Construct the hidden email
+        var emailElement = document.getElementById("hidden-email");
+        var emailLink = document.createElement("a");
+        emailLink.textContent = "ilyass.chahid@outlook.com";
+        emailLink.href = "mailto:" + username + "@" + domain;
+        emailElement.appendChild(emailLink);
+    
+        // Add a click event to reveal the email
+        emailElement.addEventListener("click", function() {
+            emailElement.innerHTML = "<span>" + username + "@" + domain + "</span>";
+        });
+    </script>
+</body>
 </html>
